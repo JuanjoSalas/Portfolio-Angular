@@ -1,0 +1,47 @@
+.wrap {
+    --primaryColor: #ffffff;
+    background-color: #1c2120;
+    font-size: 16px;
+    color: var(--primaryColor);
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    a, button {
+        cursor: pointer;
+    }
+
+    header {
+        @extend .flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        font-weight: 500;
+        //gap: 20px;
+    }
+
+    .navBar {
+        @extend .flex;
+        gap: 30px;
+
+        a {
+            border-bottom: 1px solid transparent;
+            padding-bottom: 4px;
+            transition: all .4s;
+
+            &:hover, &.active {
+                border-bottom: 2px solid var(--primaryColor);
+            }
+
+            &.borderNone {
+                border: 0;
+            }
+        }
+    }
+}
