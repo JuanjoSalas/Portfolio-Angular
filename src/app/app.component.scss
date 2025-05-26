@@ -1,7 +1,7 @@
 .wrap {
     --primaryColor: #ffffff;
     background-color: #1c2120;
-    font-size: 16px;
+    font-size: 17px;
     color: var(--primaryColor);
 
     .container {
@@ -44,4 +44,9 @@
             }
         }
     }
+
+    .logo {
+            //padding: 20px;
+        }
+
 }
