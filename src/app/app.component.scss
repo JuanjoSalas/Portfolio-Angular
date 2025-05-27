@@ -1,7 +1,8 @@
 .wrap {
     --primaryColor: #ffffff;
-    background-color: #1c2120;
-    font-size: 17px;
+    --secundaryColor:#04bfad;
+    background-color: #121515;
+    font-size: 20px;
     color: var(--primaryColor);
 
     .container {
@@ -11,6 +12,7 @@
 
     .flex {
         display: flex;
+        flex-direction: row;
     }
 
     a, button {
@@ -36,7 +38,8 @@
             transition: all .4s;
 
             &:hover, &.active {
-                border-bottom: 2px solid var(--primaryColor);
+                color: var(--secundaryColor);
+                //border-bottom: 2px solid var(--secundaryColor);
             }
 
             &.borderNone {
@@ -46,7 +49,38 @@
     }
 
     .logo {
-            //padding: 20px;
+        height: 80px;
+        margin-left: -120px;
+        transition: all 0.2s;
+        
+            &:hover {
+                //animation: vibrar 0.3s linear infinite;
+                filter: brightness(1.5);
+            }
         }
+    @keyframes vibrar {
+        0% { transform: translate(0); }
+        20% { transform: translate(-2px, 2px); }
+        40% { transform: translate(-2px, -2px); }
+        60% { transform: translate(2px, 2px); }
+        80% { transform: translate(2px, -2px); }
+        100% { transform: translate(0); }
+    }
 
+    .content {
+        @extend .flex;    
+    }
+    
+    .faceContainer {
+        min-width: 50%;
+        max-height: 600px;
+    }
+
+    .face {
+        min-width: 80%;
+        max-height: 530px;
+        border-radius: 250px;
+        margin-bottom: 50px;
+        //margin-left: 5%;
+    }
 }
