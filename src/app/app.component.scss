@@ -17,42 +17,36 @@
 
     a, button {
         cursor: pointer;
+        transform: translateX(0);
     }
 
     button {
-        //background-color: var(--primaryColor);
-        //width: 170px;
-        //padding: 12px 20px;
-        //border: 1px solid transparent;
-        //outline: none;
-        //border-radius: 8px;
-        //gap: 18px;
-        //font-size: 16px;
-        //font-weight: 600;
-         width: 150px;
+        width: 150px;
         height: 100px;
         gap: 10px;
         background-color: var(--primaryColor);
         font-size: 16px;
         font-weight: 600;
         color: #121515;
-      clip-path: polygon(
-        50% 0%, 
-        93% 25%, 
-        93% 75%, 
-        50% 100%, 
-        7% 75%, 
-        7% 25%
-      );
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      transition: background 0.3s;
+        clip-path: polygon(
+            50% 0%, 
+            93% 25%, 
+            93% 75%, 
+            50% 100%, 
+            7% 75%, 
+            7% 25%
+        );
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background 0.3s;
     }
 
     button:hover {
         background-color: var(--secundaryColor);
+        transform: translateY(5px);
     }
 
     header {
@@ -78,6 +72,10 @@
                 //border-bottom: 2px solid var(--secundaryColor);
             }
 
+            &:hover {
+                transform: translateX(5px);
+            }
+
             &.borderNone {
                 border: 0;
             }
@@ -92,6 +90,7 @@
             &:hover {
                 //animation: vibrar 0.3s linear infinite;
                 filter: brightness(1.5);
+                transform: translateY(5px);
             }
         }
     @keyframes vibrar {
@@ -143,6 +142,7 @@
             @extend .flex;
             flex-direction: row;
             text-align: center;
+            margin-left: 25%
             //gap: 40px;
         }
     }
