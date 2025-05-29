@@ -21,10 +21,11 @@ header {
             padding-bottom: 4px;
             transition: all .4s;
             color: var(--primaryColor);
+            text-decoration: none;
 
             &:hover, &.active {
                 color: var(--secundaryColor);
-                //border-bottom: 2px solid var(--secundaryColor);
+                text-decoration: none;
             }
 
             &:hover {
