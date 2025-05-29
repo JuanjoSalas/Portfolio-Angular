@@ -1,0 +1,83 @@
+.flex {
+        display: flex;
+        flex-direction: row;
+    }
+    
+a, button {
+        cursor: pointer;
+        transform: translateX(0);
+    }
+
+    button {
+        width: 150px;
+        height: 100px;
+        gap: 10px;
+        background-color: var(--primaryColor);
+        font-size: 16px;
+        font-weight: 600;
+        color: #121515;
+        clip-path: polygon(
+            50% 0%, 
+            93% 25%, 
+            93% 75%, 
+            50% 100%, 
+            7% 75%, 
+            7% 25%
+        );
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    button:hover {
+        background-color: var(--secundaryColor);
+        transform: translateY(5px);
+    }
+
+    .content {
+        @extend .flex;    
+    }
+    
+    .faceContainer {
+        min-width: 50%;
+    }
+
+    .face {
+        min-width: 80%;
+        max-height: 530px;
+        border-radius: 250px;
+        margin-bottom: 65px;
+        //margin-left: 5%;
+    }
+
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+        h1 {
+            margin: 0;
+            font-size: 65px;
+            margin: 0 0 30px;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            margin: 0 0 30px;
+        }
+
+        .btnContent {
+            @extend .flex;
+            flex-direction: row;
+            text-align: center;
+            margin-left: 25%
+            //gap: 40px;
+        }
+    }
