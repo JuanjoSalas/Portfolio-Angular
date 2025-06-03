@@ -9,7 +9,8 @@
 
 .aboutTitle {
     text-align: center;
-    font-size: 55px;
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 .aboutText {
@@ -50,7 +51,7 @@ h3 {
     font-size: 40px;
 }
 
-ul {
+.ulSkills {
     padding: 0;
     margin: 0;
     display: flex;
@@ -61,7 +62,13 @@ ul {
     gap: 30px;
 
 
-    li {
+    .liSkills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100px;
+        height: 100px;
         list-style-type: none;
         background-color: #04bfad;
         padding: 12px 20px;

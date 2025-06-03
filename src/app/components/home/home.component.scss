@@ -51,7 +51,6 @@ a, button {
         max-height: 530px;
         border-radius: 250px;
         margin-bottom: 65px;
-        //margin-left: 5%;
     }
 
     .textContainer {
@@ -62,7 +61,7 @@ a, button {
 
         h1 {
             margin: 0;
-            font-size: 65px;
+            font-size: 4rem;
             margin: 0 0 30px;
             line-height: 1.2;
         }
@@ -70,7 +69,7 @@ a, button {
         p {
             font-size: 18px;
             font-weight: 500;
-            line-height: 24px;
+            line-height: 1.7rem;
             margin: 0 0 30px;
         }
 
@@ -78,7 +77,6 @@ a, button {
             @extend .flex;
             flex-direction: row;
             text-align: center;
-            margin-left: 25%
-            //gap: 40px;
+            margin-left: 25%;
         }
     }

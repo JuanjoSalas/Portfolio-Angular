@@ -9,13 +9,12 @@ header {
         justify-content: space-between;
         padding: 20px 0;
         font-weight: 500;
-        //gap: 20px;
     }
 
     .navBar {
         @extend .flex;
         gap: 30px;
-
+        
         a {
             border-bottom: 1px solid transparent;
             padding-bottom: 4px;
@@ -44,16 +43,8 @@ header {
         transition: all 0.2s;
         
             &:hover {
-                //animation: vibrar 0.3s linear infinite;
                 filter: brightness(1.5);
                 transform: translateY(5px);
             }
         }
-    @keyframes vibrar {
-        0% { transform: translate(0); }
-        20% { transform: translate(-2px, 2px); }
-        40% { transform: translate(-2px, -2px); }
-        60% { transform: translate(2px, 2px); }
-        80% { transform: translate(2px, -2px); }
-        100% { transform: translate(0); }
-    }
+    
