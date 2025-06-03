@@ -8,7 +8,7 @@ a, button {
         transform: translateX(0);
     }
 
-    button {
+    .buttonHome {
         width: 150px;
         height: 100px;
         gap: 10px;
@@ -30,9 +30,10 @@ a, button {
         align-items: center;
         cursor: pointer;
         transition: background 0.3s;
+        text-decoration: none;
     }
 
-    button:hover {
+    .buttonHome:hover {
         background-color: var(--secundaryColor);
         transform: translateY(5px);
     }
