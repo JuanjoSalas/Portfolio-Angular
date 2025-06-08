@@ -81,3 +81,63 @@ a, button {
         }
     }
 }
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+        .faceContainer {
+            min-width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .face {
+                min-width: 60%;
+                max-height: none;
+                margin-bottom: 30px;
+                border-radius: 50%;
+            }
+        }
+
+        .textContainer {
+            align-items: center;
+            text-align: center;
+
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.5rem;
+                margin-bottom: 20px;
+                padding: 0 10px;
+            }
+
+            .btnContent {
+                flex-direction: column;
+                margin-top: 10px;
+                margin-left: 0;
+                gap: 25px;
+
+                .buttonHome {
+                    width: 180px;
+                    height: 80px;
+                    font-size: 14px;
+                    border-radius: 12px;
+                    clip-path: polygon(
+                        50% 0%, 
+                        93% 25%, 
+                        93% 75%, 
+                        50% 100%, 
+                        7% 75%, 
+                        7% 25%
+                    );
+                }
+            }
+        }
+    }
+}
