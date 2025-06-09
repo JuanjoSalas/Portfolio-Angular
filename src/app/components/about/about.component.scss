@@ -150,3 +150,55 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .aboutTitle {
+        padding: 0 20px;
+        line-height: 1.2;
+        
+    }
+
+  .aboutContent {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+
+        .aboutText {
+            width: 80%;
+
+            h5 {
+                font-size: 20px;
+            }
+
+            .aboutP {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .educationContent .aboutTitle {
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+
+    .educationContent .timeline {
+        margin-top: 0;
+        width: 80%;
+        border-left: 2px solid var(--primaryColor);
+    }
+
+    .educationContent .timelineItem {
+        padding-left: 20px;
+        margin-left: 0;
+    }
+
+    .educationContent .timelineItem .timelineContent {
+        text-align: left;
+        padding: 15px;
+    }
+
+    .educationContent .timelineItem .timelineIcon {
+        left: -20px;
+    }
+}
